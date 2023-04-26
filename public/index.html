@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>じゃんけんゲーム</title>
+</head>
+<body>
+  <div id="join-form">
+    <input type="text" id="room-key" placeholder="Room Key (4 digits)">
+    <button id="join">Join</button>
+  </div>
+  <div id="game" style="display: none;">
+    <p>じゃんけん...</p>
+    <button id="rock">グー</button>
+    <button id="scissors">チョキ</button>
+    <button id="paper">パー</button>
+    <p id="result"></p>
+    <div id="history"></div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
